@@ -12,12 +12,14 @@ group = 'io.jcoder.tutorials'
 version = '0.1.0'
 
 dependencies {
-	providedCompile group: 'javax.servlet', name: 'servlet-api', version:'2.5'
+	providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
 	
 	compile 'org.eclipse.jetty:jetty-server:9.4.6.v20170531'
+	compile 'org.eclipse.jetty:jetty-servlet:9.4.6.v20170531'
 	
-	compile 'org.apache.velocity:velocity-engine-core:2.0'
 	compile 'org.apache.velocity:velocity-tools:2.0'
+	
+	compile 'org.slf4j:slf4j-simple:1.7.25'
 }
 
 sourceCompatibility = 1.8
