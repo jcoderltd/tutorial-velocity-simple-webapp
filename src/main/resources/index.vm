@@ -3,6 +3,18 @@
 		<title>Sample Project</title>
 	</head>
 	<body>
-		This is an example project
+		Name input form:
+		<form action="/nameServlet">
+			<label for="title">Title:</label>
+			<input type="text" id="title" name="title" placeholder="Title (e.g. Mrs/Mr)"></input>
+			<br>
+			<label for="firstName">First Name:</label>
+			<input type="text" id="firstName" name="firstName" placeholder="First Name"></input>
+			<br>
+			<label for="lastName">Last Name:</label>
+			<input type="text" id="lastName" name="lastName" placeholder="Last Name"></input>
+			<br>
+			<input type="submit" value="Submit"></input>
+		</form>
 	</body>
 </html>

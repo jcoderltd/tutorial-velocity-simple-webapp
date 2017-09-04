@@ -32,6 +32,8 @@ public class Application {
         servletContext.setResourceBase("./");
 
         servletContext.setWelcomeFiles(new String[] { "index.vm" });
+        
+        servletContext.addServlet(NameServlet.class, "/nameServlet");
 
         // tell the httpServer to use the servletContext to handle incoming HTTP
         // requests
